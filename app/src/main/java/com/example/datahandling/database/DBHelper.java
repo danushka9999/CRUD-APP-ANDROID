@@ -13,7 +13,13 @@ public class DBHelper extends SQLiteOpenHelper {
     public DBHelper( Context context) { super(context, DATABASE_NAME, null, 1); }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+    public void onCreate(SQLiteDatabase db) {
+        String SQL_CREATE_ENTRIES =
+                "CREATE TABLE " + UsersMaster.Users.TABLE_NAME + " (" +
+                        UsersMaster.Users._ID + " INTEGER PRIMARY KEY," +
+                        UsersMaster.Users.COLUMN_NAME_USERNAME + " TEXT," +
+                        UsersMaster.Users.COLUMN_NAME_PASSWORD + " TEXT)";
+        db.execSQL(SQL_CREATE_ENTRIES); //This will execute the contents of SQL_CREATE_ENTRIES
 
     }
 
