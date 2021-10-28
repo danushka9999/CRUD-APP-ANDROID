@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">DataHandling</string>
+    <string name="txtName">Username</string>
+    <string name="editTextPersonName" />
+    <string name="editTextPasswprd" />
+    <string name="textViewPassword">Password</string>
+    <string name="btnSelectAll">Select all</string>
+    <string name="btnAdd">Add</string>
+    <string name="btnSignIn">Sign in</string>
+    <string name="btnDelete">Delete</string>
+    <string name="btnUpdate">Update</string>
 </resources>
